@@ -32,7 +32,6 @@ while True:
         my_hp = wizard_hp
         my_damage = wizard_damage
         break
-
     elif character == "2" or character == "elf":
         character = elf
         my_hp = elf_hp
