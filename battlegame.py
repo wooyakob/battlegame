@@ -32,6 +32,7 @@ while True:
         my_hp = wizard_hp
         my_damage = wizard_damage
         break
+
     elif character == "2" or character == "elf":
         character = elf
         my_hp = elf_hp
@@ -47,15 +48,13 @@ while True:
         my_hp = orc_hp
         my_damage = orc_damage
         break
-    elif character == "5" or character == "exit":
-        print("Goodbye!")
     else:
         print("Invalid choice. Please choice another option")
 
 # Tell User About Their Choice
-print ("You have chosen the character: " , character)
-print ("Your health points are: " , my_hp)
-print ("Your damage is: " , my_damage)
+print ("You have chosen the character: ", character)
+print ("Your health points are: ", my_hp)
+print ("Your damage is: ", my_damage)
 
 # Battle Function
 while True:
