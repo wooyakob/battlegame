@@ -1,8 +1,8 @@
 # Player Choices
-wizard = ("1 or Wizard")
-elf = ("2 or Elf")
-human = ("3 or Human")
-orc = ("4 or Orc")
+wizard = ("Wizard")
+elf = ("Elf")
+human = ("Human")
+orc = ("Orc")
 
 # Player Statistics
 wizard_hp = 70
@@ -27,7 +27,7 @@ while True:
     print("Enter 4 or type Orc for Orc")
 
     character = input("Choose your character: ").lower()
-    if character == "1" or character.lower() is "wizard":
+    if character == "1" or character.lower() == "wizard":
         character = wizard
         my_hp = wizard_hp
         my_damage = wizard_damage
@@ -54,9 +54,9 @@ while True:
         print("Invalid choice. Please choice another option")
 
 # Tell User About Their Choice
-print (f"You have chosen the character:", {character})
-print (f"Your health points are", {my_hp})
-print (f"Your damage is:", {my_damage})
+print ("You have chosen the character: " , character)
+print ("Your health points are: " , my_hp)
+print ("Your damage is: " , my_damage)
 
 # Battle Function
 while True:
